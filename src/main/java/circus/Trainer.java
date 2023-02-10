@@ -10,17 +10,25 @@ public class Trainer {
         Duck d = new Duck();
         getToSpeak(d);
 
-        Bird b = (Bird) d;  // upcasting
-        getToSpeak(b);
+        Bird bird = (Bird) d;  // upcasting
+        getToSpeak(bird);
 
-        Animal a = (Animal) b; // upcasting
-        getToSpeak(a);
+        Animal animal = (Animal) bird; // upcasting
+        getToSpeak(animal);
 
-        Duck d2 = (Duck) a; // downcasting
-        getToSpeak(d2);
+        Duck duck2 = (Duck) animal; // downcasting
+        getToSpeak(duck2);
 
         train(new Duck());
+<<<<<<< HEAD:src/main/java/circus/Trainer.java
         // train(new animal.Parrot());
+=======
+        train(new Parrot());
+
+        //Animal animal1 = new Animal();
+        Bird bird1 = new Bird();
+
+>>>>>>> in-lecture:src/main/java/Trainer.java
     }
 
     private static void getToSpeak(Animal animal) {
@@ -31,6 +39,11 @@ public class Trainer {
         if (bird instanceof Duck) {
             Duck d = (Duck) bird;
             d.swim();
+<<<<<<< HEAD:src/main/java/circus/Trainer.java
+=======
+        } else {
+            System.out.println("Not a duck!");
+>>>>>>> in-lecture:src/main/java/Trainer.java
         }
     }
 }
