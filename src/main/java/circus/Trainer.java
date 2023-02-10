@@ -20,15 +20,14 @@ public class Trainer {
         getToSpeak(duck2);
 
         train(new Duck());
-<<<<<<< HEAD:src/main/java/circus/Trainer.java
+
         // train(new animal.Parrot());
-=======
+
         train(new Parrot());
 
         //Animal animal1 = new Animal();
-        Bird bird1 = new Bird();
+        // Bird bird1 = new Bird();
 
->>>>>>> in-lecture:src/main/java/Trainer.java
     }
 
     private static void getToSpeak(Animal animal) {
@@ -39,11 +38,9 @@ public class Trainer {
         if (bird instanceof Duck) {
             Duck d = (Duck) bird;
             d.swim();
-<<<<<<< HEAD:src/main/java/circus/Trainer.java
-=======
+
         } else {
             System.out.println("Not a duck!");
->>>>>>> in-lecture:src/main/java/Trainer.java
         }
     }
 }
